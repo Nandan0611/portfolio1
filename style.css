@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Home Section */
+#home {
+  background-color: #3498db;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#home p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* About Section */
+#about {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.125rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: #f4f4f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+#portfolio .project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#portfolio .project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#portfolio .project-card:hover {
+  transform: translateY(-10px);
+}
+
+#portfolio .project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#portfolio .project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#portfolio .project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+#skills {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+#skills h4 {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill {
+  text-align: center;
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contact form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #3498db;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #portfolio .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #portfolio .project-card {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 150px;
+  }
+}
